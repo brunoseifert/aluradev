@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style_mobile_comunidade.css">
+    <title>AluraDev</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="./imagens/logo.png">
+        <menu class="menu">
+            <img class="logo-menu" src="./imagens/logo.png">
+            <aside>
+            <legend class="legend-menu">Menu</legend>
+            <li><img class="menu-codigo" src="./imagens/formato-html.png"><a href="index.html" class="editortxt">Editor de código</a></li>
+            <li><img class="menu-comunidade" src="./imagens/grupo.png"><a href="comunidade.html" class="comunidadetxt">Comunidade</a></li>
+            </aside>
+        </menu>
+        <input type="text" class="search-txt" placeholder="  Busque por algo" id="pesquisar">
+        <span class="material-symbols-outlined" onclick="menuPesquisar()" id="ilupa">search</span>
+        <span class="material-symbols-outlined" onclick="menuPesquisar()"id="icloselupa">close</span>
+        <aside class="cabecalho__menu"> 
+            <h1 id="itens">     
+                <img class="img__codigo" src="./imagens/formato-html.png">       
+                <a href="index.html" class="mobiletxt">Editor de código</a><br>
+                <img class="img__comunidade" src="./imagens/grupo.png">
+                <a href="comunidade.html"class="mobiletxt2">Comunidade</a>
+                <br><hr><br>
+                <div class="perfil">
+                <img class="perfil__foto" src="./imagens/perfil.png"> Seifert</div>
+            </h1>        
+        </aside>
+           <span class="material-symbols-outlined" id="imenu"  onclick="menuNav()">menu</span>
+           <span class="material-symbols-outlined" onclick="menuNav()"id="iclose">
+            close</span><br>
+            <div class="perfil-cabecalho">
+                <img class="cabecalho__foto" src="./imagens/perfil.png"> Seifert</div>
+   
+    </header>
+    
+
+
+    <main>
+        
+        <div class="feed">
+            <label class="feed__label">
+                <textarea id="texto" rows="22" cols="" class="feed__label__area" > 
+    const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+    const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                    
+    const unfold = (f, seed) => {
+    const go = (f, seed, acc) => {
+    const res = f(seed)
+        return res ? go(f, res[1], acc.concat([res[0]])) : acc
+     }
+    return go(f, seed, [])
+     }      </textarea>
+            </label>
+            <h1>Titulo do projeto</h1>
+            <p>Essa é a descrição do meu projeto</p>
+            <section class="social">
+                <img src ="./imagens/like.png" class="like"> 9
+                <img src="./imagens/comentario.png" class="comentario"> 9
+                <p1 class="perfil-label">@Seifert</p1>
+
+            </section>
+        </div>
+        <div class="feed">
+            <label class="feed__label2">
+                <textarea id="texto" rows="22" cols="" class="feed__label__area" > 
+    const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+    const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                    
+    const unfold = (f, seed) => {
+    const go = (f, seed, acc) => {
+    const res = f(seed)
+        return res ? go(f, res[1], acc.concat([res[0]])) : acc
+     }
+    return go(f, seed, [])
+     }      </textarea>
+            </label>
+            <h1>Titulo do projeto</h1>
+            <p>Essa é a descrição do meu projeto</p>
+            <section class="social">
+                <img src ="./imagens/like.png" class="like"> 9
+                <img src="./imagens/comentario.png" class="comentario"> 9
+                <p1 class="perfil-label">@Seifert</p1>
+
+            </section>
+        </div>
+        <div class="feed">
+            <label class="feed__label3">
+                <textarea id="texto" rows="22" cols="" class="feed__label__area" > 
+    const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+    const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                    
+    const unfold = (f, seed) => {
+    const go = (f, seed, acc) => {
+    const res = f(seed)
+        return res ? go(f, res[1], acc.concat([res[0]])) : acc
+     }
+    return go(f, seed, [])
+     }      </textarea>
+            </label>
+            <h1>Titulo do projeto</h1>
+            <p>Essa é a descrição do meu projeto</p>
+            <section class="social">
+                <img src ="./imagens/like.png" class="like"> 9
+                <img src="./imagens/comentario.png" class="comentario"> 9
+                <p1 class="perfil-label">@Seifert</p1>
+
+            </section>
+        </div>
+        <div class="feed">
+            <label class="feed__label4">
+                <textarea id="texto" rows="22" cols="" class="feed__label__area" > 
+    const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+    const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                    
+    const unfold = (f, seed) => {
+    const go = (f, seed, acc) => {
+    const res = f(seed)
+        return res ? go(f, res[1], acc.concat([res[0]])) : acc
+     }
+    return go(f, seed, [])
+     }      </textarea>
+            </label>
+            <h1>Titulo do projeto</h1>
+            <p>Essa é a descrição do meu projeto</p>
+            <section class="social">
+                <img src ="./imagens/like.png" class="like"> 9
+                <img src="./imagens/comentario.png" class="comentario"> 9
+                <p1 class="perfil-label">@Seifert</p1>
+
+            </section>
+        </div>
+    </main>
+    <script src="menu.js"></script>
+</body>
+</html>
