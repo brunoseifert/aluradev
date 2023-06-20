@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="style_mobile.css">
+    <link rel="stylesheet" href="styles/dark.css">
+    <link rel="stylesheet" href="styles/style_mobile.css">
     <title>AluraDev</title>
 </head>
 <body>
@@ -41,12 +42,14 @@
 
     <main>
         
-        <label>
-        <textarea id="texto" rows="18" cols=""  ></textarea>
+        <label id="corlabel">
+        <div class="area-codigo">
+            <code class="preview hljs" contenteditable="true" aria-label="Editor de código"></code>
+        </div>
         </label>
 
         <li>
-            <button type="button" class="botao__highlight"> Visualizar com o highlight</button>
+            <button type="button" class="botao"> Visualizar com o highlight</button>
         </li>
 
         <form method="get" class="formulario">
@@ -60,20 +63,27 @@
 
             <fieldset class="personalizacao">
                 <legend>Personalização</legend>
-                <select>
-                    <option> JavaScript</option>
-                    <option> Phyton</option>
-                    <option> CSS</option>
-                    <option> HTML</option>
-                    <option> PHP</option>
-                    <option> React</option>
+                
+                <select name ="linguagem" id="linguagem" class="linguagem">
+                    <option value="javascript"> JavaScript</option>
+                    <option value="css"> CSS</option>
+                    <option value="phyton"> Phyton</option>
+                    <option value="htmll"> HTML</option>
+                    <option value="php"> PHP</option>
+                    <option value="react"> React</option>
                 </select>
+                
             </fieldset>
-            <input type="color" name="color" id="color">
+         
+            <input type="color" name="color" class="color" value="#6bff72" oninput="trocaCor()" >
+            
             <button type="submit"> Salvar Projeto</button>
             
         </form>
     </main>
-    <script src="menu.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/cor.js"></script>
 </body>
 </html>

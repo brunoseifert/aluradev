@@ -25,37 +25,31 @@ body, html{
    
 }
 
-
-a{
+.mobiletxt{
     font-size: 12px;
     font-family: 'Inter', sans-serif;
     color:white;
     margin-left: 65px;
+    margin-top: 30px;
     align-items: center;
-   
     
 }
 
-.comunidade{
-    margin-bottom: -6%;
-}
 
 .logo{
     width: 200px;
     
 }
 
-::placeholder{
-    opacity: 0.64;
-    color: white;
-}
+
 
 #imenu{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     color: white;
- 
+    width: 100px;
+    margin: 20px;
         
 }
 
@@ -67,32 +61,10 @@ a{
 
 }
 
-.mobiletxt{
-    font-size: 12px;
-    font-family: 'Inter', sans-serif;
-    color:white;
-    margin-left: 65px;
-    margin-top: 23px;
-    align-items: center;
-    
-}
-
-.mobiletxt2{
-    font-size: 12px;
-    font-family: 'Inter', sans-serif;
-    color:white;
-    margin-left: 65px;
-    margin-top: 7px;
-    align-items: center;
-    
-}
-
 .img__codigo{
-    background-color:#5081FB29;
+    background-color:#5081FB;
     position: absolute;
-    width: 20px;
-    
-    
+    width: 20px; 
     border-radius: 16px;
     padding: 10px;
     left: 20px;
@@ -102,7 +74,7 @@ a{
 
 .img__comunidade{
     position: absolute;
-    background-color: #5081FB;
+    background-color: #5081FB29;
     width: 20px;
     border-radius: 16px;
     padding: 10px;
@@ -114,14 +86,12 @@ a{
 }
 hr{
     width: 55vw;
-    margin: 0 0 0 24px;
+    margin: 15px 24px 0 24px;
     opacity: 0.08;
 }
-.perfil__menu{
-    
+.perfil{
     display: flex;
     align-items: center;
-    flex-direction: row;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -133,16 +103,11 @@ hr{
 
 }
 
-.botao__menu{
-    background-color: transparent;
-    
-    margin-left: 50px;
-}
 
 .perfil__foto{
     width: 40px;
-   
-    
+    display: flex;
+    flex-direction: row;
 }
 
 #itens{
@@ -152,11 +117,13 @@ hr{
     flex-direction:column;
     width: 70vw;
     font-family: 'Inter', sans-serif ;
-    top:8%;
-    left: 23%;
-    height: 90vh;
+    top:12%;
+    left: 30%;
+    height: 100vh;
     background-color: #2D415B;
     border-radius: 8px;
+    z-index: 999;
+    
 }
 
 #pesquisar{
@@ -173,7 +140,6 @@ hr{
     padding-left: 15px;
 }
 
-
 #icloselupa{
     display: none;
     position: absolute;
@@ -183,7 +149,6 @@ hr{
     color: white;
 
 }
-
 #ilupa{
     display: flex;
     position: absolute;
@@ -204,142 +169,140 @@ main{
     justify-content: center;
    
 }
-.feed{
-    background-color: rgba(0, 0, 0, 0.16);
+
+#corlabel{
     width: auto;
-    height: 578px;
+    align-items: center;
+    background-color: #6bff72;
     margin: 50px 16px 0 16px;
     border-radius: 8px;
-    margin-bottom: 5%;
 }
 
-.feed__label{
-    display: flex;
-    width: auto;
-    height: 402px;
-    align-items: center;
-    background-color: #5F75E2;
-    margin:0;
-    border-radius: 8px;
+li{
+    list-style-type: none;
 }
 
-.feed__label2{
+.botao{
     display: flex;
-    width: auto;
-    height: 402px;
+    width: calc(100vw - 40px);
+    flex-direction: column;
     align-items: center;
-    background-color: #6BD1FF;
-    margin:0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    margin: 32px 16px 0 16px;
     border-radius: 8px;
+    background: rgba(80, 129, 251, 0.08);
+    padding: 16px 44px 16px 44px;
 }
 
-.feed__label3{
-    display: flex;
+.formulario{
     width: auto;
-    height: 402px;
-    align-items: center;
-    background-color: #cbff6b;
-    margin:0;
-    border-radius: 8px;
+}
+
+fieldset{
+    border: 0;
+}
+
+legend{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    color: white;
+    font-weight: 400;
+    line-height: 18px;
+    padding-left: 16px;
+    padding-top: 40px;
     
 }
 
-.feed__label4{
-    display: flex;
-    width: auto;
-    height: 402px;
-    align-items: center;
-    background-color: #66132c;
-    margin:0;
-    border-radius: 8px;
-
-}
-
-.feed__label__area{
-    width: calc(100% - 22px);
-    display: block;
-    border-radius: 8px;
-    background-color: #141414;
-    margin: 22px;
-    color:white;
-    resize: none;
-    font-size: 14px;
-    font-family: 'Inter', sans-serif;
-    text-indent: 2%;
-   
-}
-
-h1{
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 32px;
-    color: white;
-    margin: 24px 24px 8px 24px;
-
-}
-
-p{
+::placeholder{
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
-    opacity: 0.8;
-    margin: 0 24px 34px 24px;
     color: white;
-
+    opacity: 0.64;
 }
 
-.social{
+.projeto{
     display: flex;
-    align-items: center;
-    color: white;
-    gap:5px;
-    margin-left: 29px;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+
+#name{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.16);
+    margin: 16px 16px 0 16px;
+    width: calc(100vw - 40px);
+    height: 56px;   
+    border: 0;
+    color: rgba(255, 255, 255, 0.89);
     
 }
 
-.like{
-    width: 20px;
-    filter: invert(100%);
+#text{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.16);
+    margin: 16px 16px 0 16px;
+    width: calc(100vw - 40px);
+    height: 80px;   
+    border: 0;
+    text-align: start;
+    color: rgba(255, 255, 255, 0.89);
 }
 
-.comentario{
-    width: 20px;
-    filter: invert(100%);
-    padding-left: 15px;
+select{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.16);
+    margin: 16px 16px 0 16px;
+    width: calc(100vw - 40px);
+    height: 56px;   
+    border: 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: white;
+    opacity: 0.64 ;
 }
 
-.perfil-label{
-    padding-left: calc(100% - 200px);
+option{
+    background-color:#051D3B
+}
+
+
+.color{
+    background: none;
+    margin: 16px 16px 0 16px;
+    width: calc(100vw - 40px);
+    height: 56px;
+    border: none;
+}
+
+
+button{
+    border-radius: 8px;
+    background: #5081FB;
+    margin: 16px 16px 0 16px;
+    width: calc(100vw - 40px);
+    height: 56px;   
+    border: 0;
+    opacity: 0.64 ;
+    text-align: center;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-}
-
-.perfil{
-    display: flex;
-    align-items: center;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: white;
-    gap:10px;
-    margin-left: 22px;
-
-}
-
-
-.perfil__foto{
-    width: 40px;
-    display: flex;
-    flex-direction: row;
+    color:#051D3B;
+    margin-bottom: 40px;
 }
 
 .menu, .logo-menu, .menu-codigo, .menu-comunidade, .editortxt, .perfil-cabecalho{
@@ -368,6 +331,11 @@ p{
         margin-left:50%
     }
 
+    .botao, #name, #text, button, #color, select{
+       width: calc(100vw - 40px);
+       overflow: hidden;
+    }
+
     #itens{
         width: calc(100vw - 150px);
     }
@@ -375,12 +343,13 @@ p{
     .menu, .logo-menu, .menu-codigo, .menu-comunidade, .editortxt, .perfil-cabecalho{
         display: none;
     }
+
 }
 
 @media (min-width:1280px){
 
     body, html{
-        overflow: auto;
+        overflow: hidden;
     }
 
     .logo{
@@ -397,21 +366,17 @@ p{
         
     }
 
-    .cabecalho{
-        display: flex;
-        position: relative;
-        
-    }
 
     .logo-menu{
         display: flex;
         width: 200px;
+        
        
     }
 
     .menu-codigo{
-        display: flex;
-        background-color: rgba(80, 129, 251, 0.16);
+        display: block;
+        background-color:#5081FB;
         width: 20px; 
         border-radius: 16px;
         padding: 10px;
@@ -420,15 +385,6 @@ p{
 
     .legend-menu{
         margin-bottom: 18px;
-        font-family: 'Inter', sans-serif;
-        font-size: 12px;
-        text-transform: uppercase;
-        letter-spacing: 0.4em;
-        color: white;
-        font-weight: 400;
-        line-height: 18px;
-        padding-left: 16px;
-        padding-top: 40px;
     }
     
     li{
@@ -440,8 +396,8 @@ p{
     }
 
     .menu-comunidade{
-        display: flex;
-        background-color:#5081FB;
+        display: block;
+        background-color:rgba(80, 129, 251, 0.16);
         width: 20px; 
         border-radius: 16px;
         padding: 10px;
@@ -465,24 +421,63 @@ p{
      display: block;
      width: calc(100% - 738px);
      left: 150px;
-     
     }
 
-    main{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin-left: 344px;
-        width: calc(100% - 434px);
-        transform:translateY(-200px);
+    #corlabel{
+      display: block;
+      width: calc(100% - 722px);
+      height: 366px;
+      margin-left: 350px;
+      transform: translateY(-200px);
+    }
+
+    #texto{
+        height: 302px;
+    }
+
+    .botao{
+        width: calc(100% - 712px);
+        margin-left: 338px;
+        transform: translateY(-200px);
+        cursor: pointer;
+    }
+
+    .projeto{
+        padding-bottom: 5px;
+    }
+
+    select{
+        cursor: pointer;
+
+    }
+    .color{
+        cursor: pointer;
+        border: none;
+        border-radius: 8px solid;
+    }
+    button{
+        align-items: center;
+        flex-direction: row;
+        padding-left: 88px;
+        cursor: pointer;
+
+    }
+
+    #name, #text, button, .color, select{
+        width: 272px;
+        display: flex;
+        
+        
+    }
+
+    form{
+        position: absolute;
+        right: 22px;
+        top:30px;
+
        
         
     }
-    
-    a{
-        margin: 0;
-        padding: 0;
-    }
-
     .perfil-cabecalho{
         display: flex;
         align-items: center;
@@ -493,9 +488,9 @@ p{
         line-height: 24px;
         color: white;
         gap: 10px;
-        transform: translateY(-90px);
+        transform: translateY(-15px);
         justify-content: end;
-        margin-right: 110px;
+        margin-right: 30px;
         
        
     
@@ -505,6 +500,10 @@ p{
     .cabecalho__foto{
         width: 40px;
         display: flex;
-    }  
+       
+        
+    }
 
-}
+   
+    
+}   
